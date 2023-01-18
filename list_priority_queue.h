@@ -14,6 +14,13 @@ class ListPriorityQueue {
         void insert(const E& e);
         const E& min() const;
         void removeMin();
-}
+};
+
+class IsLess {
+    public:
+        bool operator()(int a, int b) {
+            return a < b;
+        }
+};
 
 #endif
